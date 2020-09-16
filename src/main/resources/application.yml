@@ -1,0 +1,19 @@
+server:
+  port: 8888
+  servlet:
+    context-path: /store
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/demo
+    username: postgres
+    password: 123456
+    driver-class-name: org.postgresql.Driver
+    initialization-mode: always
+  jpa:
+    show-sql: true
+
+jwt:
+  token:
+    secret: secret
+    expiration: 36000000
